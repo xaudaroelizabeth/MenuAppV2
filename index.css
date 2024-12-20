@@ -1,0 +1,205 @@
+html body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.app {
+    margin: 0 auto;
+    font-family: "Smythe", serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 600px;
+    object-fit: cover;
+    overflow-x: auto;
+    padding: 10px;
+} 
+
+
+header {
+    display:flex;
+    justify-content: center; 
+}
+
+header img {
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    object-fit: cover;  /* Ensures image fills the container while maintaining its aspect ratio */
+}
+
+.item { /* menu item */
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.item-name {
+    font-size:28px;
+}
+
+.item-img { /* item emoji */
+    margin:15px;
+    width:70px;
+    height:89px;
+    font-size: 40px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.item-description { /* STYLING FOR - name, ingredient, price */
+    color: black; 
+    margin:20px;
+}
+
+.price {
+    font-size: 20px;
+}
+
+.add-item { /* button increment */
+    margin-left: auto;
+    margin-right: 40px;
+    border-radius: 50%;
+    border: 1px solid #DEDEDE; /* 1px thin border */
+    font-size: 20px;
+    font-weight: 200;  /*Extra-light font weight for the button */
+    align-self: center;
+    background: none;
+    padding: 7px 12px;
+    color: grey;
+}
+
+.ingredients {
+    font-size: 16px;
+    color:#8B8B8B;
+    height: 0px;
+}
+
+.submit-btn{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight:bold;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px grey;
+    color: white;           
+    width:100%;
+    border: none;   
+    background-color: #16DB99;
+    border-radius: 3px;              
+    padding: 20px 0px;        
+  }
+
+.remove-btn {
+    background-color:transparent;
+    border: none;
+    color:grey;
+}
+
+.ticket {
+    font-size: 26px;
+    text-align: center;
+    padding: 25px 0 50px 0 ;
+}
+
+.ticket-container {
+    display:flex;
+    justify-content: flex-start;
+}
+
+.item-ordered {
+    font-size:23px;
+}
+
+.item-price {
+    margin-left:auto;
+}
+
+.total-container {
+    display: flex;
+    margin-bottom:40px;
+}
+
+#total-price {
+    margin-left:auto;
+}
+
+#payment-modal {
+    background-color: white;
+    position: fixed; /* Stay in place */
+    display:none;
+    z-index: 1; /* Sit on top */
+    width:400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the modal */
+    overflow: auto; /* Enable scroll if needed */
+    border-radius: 10px;
+    border-color: grey;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add shadow */;
+}
+
+.inner-modal {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.payment-title {
+    padding:20px 0;
+    font-weight: bold;
+}
+
+.card-info {
+    margin:10px;
+    padding:15px;
+    width:80%;
+    border-color:#2F2F2F;
+}
+
+.pay-btn {
+    margin:30px 0 25px 0;
+    padding:15px;
+    width:85%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px grey;
+    color: white;  
+    background-color: #16DB99;
+    border-radius: 3px;  
+    border: none;         
+}
+
+#payment-confirmation {
+    display:none;
+    background-color: #ECFDF5;
+    padding:40px 0;
+    margin: 40px auto 0 auto;
+    width: 80%;
+    text-align: center;
+    color: #065F46;
+    border-radius: 2px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-size:26px;
+}
+
+#main-container {
+    display:block;
+}
+
+
+@media screen and (max-width: 440px) {
+  .app{
+      width: 90%;
+  }
+
+    #payment-modal{
+        width: 80%;
+    }
+}

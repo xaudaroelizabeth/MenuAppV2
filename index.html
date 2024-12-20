@@ -1,0 +1,45 @@
+<html>
+    <head>
+       <link rel="stylesheet" href="index.css">
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+       <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"       rel="stylesheet">
+    </head>
+
+    <body>
+        
+        <div class="app">
+            <header> <img src="header.png" ></header>
+            <div id="menu-items"></div>
+    
+            <div id= "main-container">
+                <div class="ticket">Your Order</div>
+                <div id="container-items"></div>
+                <hr>
+                <div class="total-container">
+                    <div class="total">Total price:</div>
+                    <div id="total-price"></div>
+                </div>
+                <button id="submit-btn" class="submit-btn">Complete order</button>
+            </div>
+             <div id="payment-confirmation">Thanks, your order is on its way!</div>
+        </div>
+    
+        <div id="payment-modal">
+            <div class="inner-modal">
+                <div class="payment-title">Enter Card Details</div>
+                <input class="card-info" type="text" placeholder="Enter your name"></input>
+                <input class="card-info" type="text" placeholder="Enter your card number"></input>
+                <input class="card-info" type="text" placeholder="Enter CVV"></input>
+                <button id="payment-btn" class="pay-btn">Pay</button>
+             </div>   
+        </div>
+            
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
+
